@@ -100,7 +100,17 @@ var codeEcho = codeFriend(codeLove);
   Now, similar to the last problem, write a function called 'fnCounter' that accepts two parameters. The first parameter will be an anonymous function and the second parameter, 'N', will be a number. Now, in 'fnCounter', allow the anonymous funciton to be invoked 'N' number of times. After it's been invoked 'N' number of times, return 'STOP'.
 */
 
+var fnCounter = function(funcAnon, N) {
+  
+  for (var i = 0; i < N; i++) {
+    funcAnon();
+  }
+  return "Stop";
 
+}
+function funcAnon() {
+  console.log("Hello There");
+}
 
 //Next Problem
 
